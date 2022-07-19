@@ -1,0 +1,47 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 239px;
+    position: absolute;
+    padding-left: 15px;
+    background-color: #ffffff;
+    box-shadow: 4px 0px 16px rgba(30, 30, 30, 0.08);
+}
+
+.sidebar .logo {
+    display: flex;
+    padding-top: 15px;
+}
+.sidebar .logo p {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+}
+.sidebar .logo img {
+    width: 30%;
+    margin-right: 22px;
+}
+
+.sidebar div {
+    padding: 8px;
+    font-size: 24px;
+}
+
+.sidebar-container {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-container p {
+    margin: 0 0 20 0;
+}
+
+.sidebar-container i {
+    width: 18px;
+    padding-right: 30px;
+    opacity: 20%;
+}
