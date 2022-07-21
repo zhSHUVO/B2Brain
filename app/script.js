@@ -25,6 +25,7 @@ for (i = 0; i < coll.length; i++) {
 // searching accounts
 const searchAccount = () => {
     document.querySelector(".hero-images").style.display = "none";
+    document.querySelector(".search-result").style.display = "block";
     document.querySelector(".search").style.display = "none";
     document.querySelector(".cross").style.display = "block";
 
@@ -46,15 +47,14 @@ const searchAccount = () => {
 const displayResults = (results) => {
     // clear previous results
     searchResults.innerHTML = " ";
-    console.log(results);
 
     results.forEach((result) => {
-        console.log(result);
         const div = document.createElement("div");
         div.innerHTML = `
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-2">
+
                         <img src="./images/account-logo.png" class="account-logo" alt="" />    
                     </div>
                     <div class="col-8">
@@ -62,7 +62,11 @@ const displayResults = (results) => {
                         <p class="m-0 ps-3">${result.website}</p>
                     </div>
                     <div class="col-2">
-                        <button type="button" class="btn btn-outline-danger track-btn p-0 b-0">Track</button>
+                        <button type="button" onclick='console.log("${
+                            result.company
+                        } (${
+            result.slug
+        }) tracked at ${Date.now()}")' class="btn btn-outline-danger track-btn p-0 b-0">Track</button>
                     </div>
                 </div>
             </div>
