@@ -1,3 +1,31 @@
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.unread-badge {
+    color: white;
+    background-color: #ff7474;
+    padding: 5px;
+    border-radius: 22px;
+    font-size: 10px;
+}
+
+main {
+    position: relative;
+    top: 0;
+    left: 17%;
+}
+
+.search-form {
+    position: fixed;
+}
+
 .form-control {
     padding-left: 2.375rem;
     height: 60px;
@@ -24,6 +52,7 @@
     padding: 10px;
     min-width: 50px;
     text-align: center;
+    opacity: 60%;
 }
 
 form .search {
@@ -45,6 +74,10 @@ form .cross {
 .content-pre {
     display: none;
     opacity: 60%;
+}
+.vertical {
+    border-left: 1px solid #dbe0e8;
+    height: 95px;
 }
 
 li {
@@ -71,4 +104,16 @@ li {
 .track-btn {
     width: 53px;
     height: 30px;
+}
+
+#profileImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #512da8;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    line-height: 150px;
+    margin: 20px 0;
 }
